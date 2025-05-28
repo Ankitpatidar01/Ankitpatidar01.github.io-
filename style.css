@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+     background: black;
+     color: #fff;
+}
+
+html{
+  scroll-behavior: smooth; /* so that whenever navgation bar home about serive are cicked it perform it very smoothly*/
+}
+
+#header{
+    width: 100%;
+    height: 100vh; /* Use vh for screen-adaptive height, especially for full-screen designs
+                    it stand for viewport height */
+    background-image: url(images/background.png);
+    background-size: cover; 
+    background-position: center;
+}
+
+.container{
+     padding: 10px  10% ;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /*Items wrap onto multiple lines. */
+    /* flex-wrap controls whether the flex items should wrap onto
+     multiple lines or stay in a single line. */
+    
+    
+
+
+}
+
+.logo{
+    width: 140px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none; /*Remove default bullets or numbers from a list.*/
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 0; /* Start with 0 width */
+    background: #ff004f;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%; /* Expands on hover */
+  }
+
+  .header-text{
+    margin-top: 20%;
+    font-size: 30px;
+
+  }
+
+  .header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+  }
+
+  .header-text h1 span{
+    color:#ff004f ;
+  }
+
+  /* ------------------About------------------- */
+
+  #about{
+    padding: 80px 0;
+    color: #ababab;
+  }
+
+  .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-col-1{
+    flex-basis: 35%;  /* It tells a flex item to start with 35% of the container's width (in a horizontal flex layout).
+                       The actual size might grow or shrink based on flex-grow and flex-shrink. */
+    
+
+  }
+
+  .about-col-1 img{
+    width:  100%;
+    border-radius: 15px;
+  }
+
+  .about-col-2{
+    flex-basis: 60% ; /* so we can get 5% space between both the column*/
+
+  }
+
+  .sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+
+  }
+
+  .tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+  }
+
+  .tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;  /* Changes cursor to a pointer (hand) on hover */
+    position: relative;   /* Needed if you want to position child elements (like ::after) absolutely relative to this */
+
+}
+
+.tab-links::after{
+    content:''; /* Creates a pseudo-element (usually in ::after or ::before) */
+    position: absolute;
+    left: 0;
+    bottom: -8px;   /* Slightly below the bottom of the parent element */
+    height: 3px; /* Thin underline */
+    width: 0; /* Start with 0 width */
+    background: #ff004f;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+  width: 50%;
+}
+
+.tab-contents ul li{
+  margin: 10px 0;
+  list-style: none;
+}
+
+.tab-contents ul li span{
+  color: #ff004f;
+  font-size: 14px;
+}
+
+.tab-contents{
+   display: none;
+}
+
+.tab-contents.active-tab{
+  display: block; /* that is whenever the block tha is either skills education or experience is cliced its content is vsible in block format*/
+
+}
+
+/* ---------------------service style--------------------------- */
+#services{
+  padding: 30px 0;
+}
+
+.service-list{  /* want to watch a video on grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(250px , 1fr)); /* to make it responsive  so that while using this in phone its div is sifted in column wise accordingly */
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.service-list div{
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s , transform 0.5s;
+}
+
+.service-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+
+
+.service-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+
+
+}
+
+
+.service-list div a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+
+.service-list div:hover{
+  background: #ff004f;
+   transform: translateY(-10px); /* so it will the box by 10px */
+}
+
+
+/* ---------------portfolio-----------------*/
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(250px , 1fr)); /* to make it responsive  so that while using this in phone its div is sifted in column wise accordingly */
+  grid-gap: 40px;
+  margin-top: 50px;
+
+}
+
+.work{
+   border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+}
+
+.work img{
+  width:100% ;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5;
+}
+
+.layer{
+  width: 100%;
+  height: 0; /* because of this height 100% text content on this card is visible if we make it 0 then it is not visible*/
+  background: linear-gradient(rgba(0,0,0,0.6) , #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden; /* ye krna hai abhi iska smjh nhi aya kya kese hora */
+
+  /* to align text on this card at center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+
+  font-size: 14px;
+
+  transition: height 0.5s; /* so that whenever i take cursor on work card my hover effect start from bottom*/
+
+
+}
+
+.layer h3{
+  font-weight: 1000;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.layer a{
+  font-size: 18px;
+  color: #ff004f;
+  text-decoration: none;
+  line-height: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background: #fff;
+  text-align: center;
+
+}
+
+.layer p{
+  color: white;
+}
+
+.work:hover img{
+   transform: scale(1.1);
+}
+
+.work:hover .layer{
+  height: 100%;
+}
+
+.btn{
+    padding: 14px 50px;
+    text-align: center;
+    text-decoration: none;
+   
+    display: block;
+    color: white;
+    
+    border: 1px solid #ff004f;
+    width: fit-content;
+ 
+    border-radius: 6px;
+    transition: background 0.5s;
+  
+    
+    margin : 50px auto; /* auto because in case from left and right it can adjust by itself*/
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+
+  /* ---------------------contact------------------------- */
+
+  .contact-left{
+         flex-basis: 35%; 
+
+  }
+
+  .contact-left p{
+    margin-top: 30px;
+  }
+
+  .contact-left p i{
+    color: #ff004f;
+    margin-right : 15px;
+    font-size: 25px;
+  }
+
+  .contact-right{
+    flex-basis: 60%;
+  }
+
+  .social-icons{
+    margin-top: 30px;
+  }
+
+  .social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s ;
+  }
+
+  .social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+  }
+
+  .btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+  }
+
+  .contact-right form{
+    width: 100%;
+
+  }
+
+
+   
+  form input ,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    margin: 15px 0;
+    color: #fff;
+    font-size:18px ;
+    border-radius: 6px;
+    padding: 15px;
+  }
+
+  form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+
+  }
+
+  .copyright{
+      width: 100%;
+      text-align: center;
+      padding: 25px 0;
+      background: #262626;
+      font-weight: 300;
+      margin-top: 20px;
+
+  }
+
+  .copyright i{
+    color: #ff004f ;
+  }
+
+  nav .fa-solid{
+    display: none; /* to hide cross mark and menu bar in laptop screen */
+  }
+  /*---------------css for small screen-----------------------*/
+
+  #msg{
+    color: #61b752;
+    margin-top: -10px;
+    display: block;
+  }
+
+  
+  @media only screen and (max-width: 600px){
+
+    #header{
+      background-image: url(images/phone-background.png);
+    }
+
+    .header-text{
+      margin-top: 125%;
+      font-size: 16px;
+
+    }
+
+    .header-text h1{
+      font-size: 30px;
+    }
+
+    nav .fa-solid{
+      display: block;
+      font-size: 25px;
+    }
+
+    nav ul{
+     background: #ff004f;
+     position: fixed;
+     top: 0;
+     right: -200px;
+     width: 200px;
+     height: 100vh;
+     padding-top: 50px;
+     z-index:2 ;
+
+     transition:right 0.5s ; /* so that menu form right will appear slowly*/
+
+    }
+
+    nav ul li{
+      display: block;
+      margin: 25px;
+    }
+
+    nav ul .fa-solid{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
+
+    .sub-title{
+      font-size: 40px;
+
+    }
+
+    .about-col-1 ,.about-col-2{
+      flex-basis: 100%; /* to increase about me above image*/
+
+    }
+
+    .about-col-1{
+      margin-bottom: 30px;
+    }
+   
+    .about-col-2{
+      font-size: 14px;
+    }
+
+    .tab-links{
+      font-size: 16px;
+      margin-right: 20px;
+
+    }
+
+    .contact-left ,.contact-right{
+           flex-basis: 100%; /* need to know about this wounderful property*/
+    }
+
+    .copyright{
+      font-size: 14px;
+    }
+  }

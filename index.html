@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/328b7aa3f3.js" crossorigin="anonymous"></script> <!--copied this link from fontawesone (your kit) to take symbol from there--->
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">PortFolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> <!---This is not visible when visible in laptop screen but will be visible when phone interface is used -------->
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>  <!---This is not visible when visible in laptop screen but will be visible when phone interface is used -------->
+            </nav>
+            <div class="header-text">
+                <!-- <p>Student</p> -->
+                <h1>Hi , I'm <span>Ankit</span><br> patidar From India</h1>
+            </div>
+        </div>
+    </div>
+
+     <!------------------About------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/DSC_0019.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi provident dolor magnam consequatur, ut porro. Tempora molestias voluptas nam, voluptate in assumenda! Accusantium quibusdam optio voluptates dolores provident voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque tenetur incidunt quo facilis? Doloribus laboriosam ducimus.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                     <div class="tab-contents active-tab" id="skills">   <!-- Another class active-tab is added so that whenever tha tab is clicked its content is only visible -->
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web / App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                      
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-current</span><br>National institute of Technology, Warangal (MCA - CSE)</li>
+                            <li><span>2021-2024</span><br>Isba institute of Professional Studies (BCA)</li>
+                            <li><span>2020-2021</span><br> ICSE - 12th</li>
+                            <li><span>2019-2020</span><br>ICSE - 10th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-------------------------------Services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>  <!-- To have code symbol copied from fontawesome website -->
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sint recusandae porro aliquid numquam illo corporis fugiat reiciendis qui deserunt distinctio placeat! Tempora officiis nisi nulla architecto, quis non repellendus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>  <!-- To have code symbol copied from fontawesome website -->
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sint recusandae porro aliquid numquam illo corporis fugiat reiciendis qui deserunt distinctio placeat! Tempora officiis nisi nulla architecto, quis non repellendus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i> <!-- To have code symbol copied from fontawesome website -->
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sint recusandae porro aliquid numquam illo corporis fugiat reiciendis qui deserunt distinctio placeat! Tempora officiis nisi nulla architecto, quis non repellendus.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+          <!---------------------------- portfolio  ---------------->
+
+          <div id="portfolio">
+             <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media</h3>
+                            <p>The app connect you to talented people around the world
+                                download it from play store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app connect you to talented people around the world
+                                download it from play store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Online shopping App</h3>
+                            <p>The app connect you to talented people around the world
+                                download it from play store.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#" class="btn">See more</a>
+             </div>
+          </div>
+
+
+          <!-------------------------Contact ---------------------->
+           
+          <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                       <h1 class="sub-title">Contact Me</h1>
+                       <p><i class="fa-solid fa-paper-plane"></i> ap24mcf1r06@student.nitw.ac.in</p>
+                       <p><i class="fa-solid fa-phone"></i> 8103920171</p>
+                       <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://www.linkedin.com/in/ankit-patidar-72b961321"><i class="fa-brands fa-linkedin"></i></a>
+                       </div>
+
+                       <a class="btn btn2" href="images/my-cv.pdf" download>Download CV</a>
+                            
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                           <input type="text" name="Name" placeholder="Your Name" required> <!--  required keyword is used because if clicked on submit button without submit it will prompt you a suggestion to fill the required details -->
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                            <button class="btn btn2" type="submit">submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                 <p>Copyright &copy; Ankit. Made with <i class="fa-solid fa-heart"></i> by Ankit Patidar</p>
+            </div>
+          </div>
+        
+    <!-- Javascript started here -->
+    <script>
+           
+           var tablinks = document.getElementsByClassName("tab-links")
+           var tabcontents = document.getElementsByClassName("tab-contents")
+
+           function opentab(tabname){
+
+            for(tablink of tablinks){
+             tablink.classList.remove("active-link"); // it will remove this class for all tab link by which underline under skill or experience or education is removed.
+             }
+
+             for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")  // it will remove this class for all tab content by which content of particular  skill or experience or education is removed.
+             }
+            
+             event.currentTarget.classList.add("active-link")
+             // to display content of section which is clicked
+             document.getElementById(tabname).classList.add("active-tab");
+           }
+
+    </script>
+
+    <script>
+         var sidemenu = document.getElementById("sidemenu");
+           
+         function openmenu(){
+            sidemenu.style.right = "0";
+         }
+
+         function closemenu(){
+            sidemenu.style.right = "-200px";
+         }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyMm-qthYlEdmzdVuQXC27XjBXboswj1-er1wICHj5L8gIbPVAQ_J03c_ZyjNzlSyJNUA/exec'
+    const form = document.forms['submit-to-google-sheet'] //  form name is same here and above html form i.e submit-to-google-sheet
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => { // at submittion of message it will overwrite innerhtml text and then after 5 second will be made invisible
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000) // to show submission msg only 5 sec 
+            form.reset() // it will reset the form
+    })
+    .catch(error => console.error('Error!' , error.message))
+})
+  </script>
+
+</body>
+</html>
