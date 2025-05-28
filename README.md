@@ -17,7 +17,7 @@ Hi, I’m Ankit patidar , a passionate developer skilled in web development, alg
 - Others: Data Structures, Algorithms, System Design
 
 ## Contact
-- Email: your.email@example.com  
+- Email: ankitpatidar1300@gmail.com  
 - LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/ankit-patidar-72b961321/)
 - GitHub: [github.com/yourusername](https://github.com/Ankitpatidar01)
 
