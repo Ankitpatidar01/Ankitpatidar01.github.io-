@@ -18,8 +18,8 @@ Hi, I’m Ankit patidar , a passionate developer skilled in web development, alg
 
 ## Contact
 - Email: ankitpatidar1300@gmail.com  
-- LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/ankit-patidar-72b961321/)
-- GitHub: [github.com/yourusername](https://github.com/Ankitpatidar01)
+- LinkedIn:(https://www.linkedin.com/in/ankit-patidar-72b961321/)
+- GitHub: (https://github.com/Ankitpatidar01)
 
 ---
 
