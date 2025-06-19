@@ -6,9 +6,7 @@ Hi, I’m Ankit patidar , a passionate developer skilled in web development, alg
 Hi, I’m Ankit patidar , a passionate developer skilled in web development, algorithms, and system design. This portfolio showcases my projects, coding challenges, and growth journey. I’m eager to solve problems and build efficient software.
 
 ## Projects
-- Project 1: Brief description with [link]
-- Project 2: Brief description with [link]
-- Project 3: Brief description with [link]
+
 
 ## Skills
 - Programming Languages: Java, Python, JavaScript
